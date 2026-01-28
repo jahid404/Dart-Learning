@@ -8,4 +8,10 @@ void main(List<String> args) {
   print(userInfo.entries);
   print(userInfo.hashCode);
   print(userInfo.runtimeType);
+
+  userInfo['country'] = 'bangladesh';
+  print(userInfo);
+
+  userInfo.remove('age');
+  print(userInfo);
 }
