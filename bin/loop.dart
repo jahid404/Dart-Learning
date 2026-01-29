@@ -42,4 +42,43 @@ void main(List<String> args) {
 
   print('Sum3: $sum3');
   print('Total time taken: $timeTaken3 microseconds');
+
+  // for-in loop
+  var startTime4 = DateTime.now();
+  var sum4 = 0;
+  var list4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  for (var i in list4) {
+    sum4 += i;
+  }
+
+  var timeTaken4 = DateTime.now().difference(startTime4).inMicroseconds;
+
+  print('Sum4: $sum4');
+  print('Total time taken: $timeTaken4 microseconds');
+
+  // for-in loop over json
+  var userInfo = [
+    {"name": "John", "age": 30, "city": "New York"},
+    {"name": "Jane", "age": 25, "city": "Los Angeles"},
+    {"name": "Bob", "age": 35, "city": "Chicago"},
+  ];
+
+  for (var user in userInfo) {
+    print('Name: ${user['name']}, Age: ${user['age']}, City: ${user['city']}');
+  }
+
+  // for-in loop over set
+  var cities = {"Dhaka", "Chittagong", "Sylhet", "Khulna", "Rajshahi"};
+
+  for (var city in cities) {
+    print('City: $city');
+  }
+
+  // for-in loop over map
+  var person = {"name": "John", "age": 30, "city": "New York"};
+
+  for (var key in person.keys) {
+    print('${key.toUpperCase()}: ${person[key]}');
+  }
 }
