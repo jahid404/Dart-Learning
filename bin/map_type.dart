@@ -14,4 +14,21 @@ void main(List<String> args) {
 
   userInfo.remove('age');
   print(userInfo);
+
+  // map constructor
+  var newMap = {}; // 'new Map()' or Map()
+
+  newMap['name'] = 'siam';
+  print(newMap);
+  print(newMap.isNotEmpty);
+  print(newMap.isEmpty);
+
+  newMap.addAll({'age': 15});
+  print(newMap);
+
+  newMap.remove('name');
+  print(newMap);
+
+  newMap.clear();
+  print(newMap);
 }
