@@ -22,4 +22,5 @@ void main(List<String> args) {
   print(classObjectExternal.message);
   print(classObjectExternal.array);
   print(classObjectExternal.summation(123, 321));
+  print(LearningClassExternal.deduction(321, 123));
 }
