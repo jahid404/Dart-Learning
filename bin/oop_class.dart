@@ -1,4 +1,4 @@
-import 'oop-classes/learning_class.dart';
+import 'oop/learning_class.dart';
 
 class LearningClass {
   var message = 'hey, this is dart oop class learning';
