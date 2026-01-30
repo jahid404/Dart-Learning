@@ -57,11 +57,11 @@ void main(List<String> args) {
   print('Sum4: $sum4');
   print('Total time taken: $timeTaken4 microseconds');
 
-  // for-in loop over json
+  // for-in loop over json array
   var userInfo = [
-    {"name": "John", "age": 30, "city": "New York"},
-    {"name": "Jane", "age": 25, "city": "Los Angeles"},
-    {"name": "Bob", "age": 35, "city": "Chicago"},
+    {"name": "jahid", "age": 25, "city": "New York"},
+    {"name": "tanjeem", "age": 10, "city": "Los Angeles"},
+    {"name": "siam", "age": 14, "city": "Chicago"},
   ];
 
   for (var user in userInfo) {
